@@ -6,7 +6,7 @@ An action that runs ClickHouse on the default ports in GitHub Actions.
 Just use it in your GitHub actions Yaml file like this:
 ```yaml
     steps:
-      - uses: ryanldy/action-clickhouse-in-ci@v1.0
+      - uses: getsentry/action-clickhouse-in-ci@v1.1
 ```
 
 ## Note
