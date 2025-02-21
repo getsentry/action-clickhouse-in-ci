@@ -8,4 +8,4 @@ echo "--- Containers ---"
 docker ps
 
 echo "--- ClickHouse Details ---"
-docker exec -it clickhouse-test clickhouse-client --query "SELECT * FROM system.build_options"
+docker exec clickhouse-test clickhouse-client --query "SELECT * FROM system.build_options"
