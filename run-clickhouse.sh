@@ -8,4 +8,4 @@ echo "--- Containers ---"
 docker ps
 
 echo "--- ClickHouse Details ---"
-curl -i 'http://localhost:8123/' --data-binary 'SELECT * FROM system.build_options'
+docker exec -it clickhouse-test clickhouse-client --query "SELECT * FROM system.build_options"
