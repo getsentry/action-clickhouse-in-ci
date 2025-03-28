@@ -7,7 +7,7 @@ Just use it in your GitHub actions Yaml file like this:
 ```yaml
     steps:
       - name: "Setup ClickHouse Server"
-        uses: getsentry/action-clickhouse-in-ci@v1.3
+        uses: getsentry/action-clickhouse-in-ci@v1.6
 ```
 
 ## Note
