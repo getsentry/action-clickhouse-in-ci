@@ -4,8 +4,8 @@ docker run -d -e CLICKHOUSE_SKIP_USER_SETUP=1 -p 8123:8123 -p 9000:9000 --name c
 
 sleep 10
 
-echo "--- Containers ---"
+echo "--- Running Containers ---"
 docker ps
 
-echo "--- ClickHouse Details ---"
-docker exec clickhouse-test clickhouse-client --query "SELECT * FROM system.build_options"
+echo "--- Details of running ClickHouse ---"
+docker exec clickhouse-test clickhouse-client --query "SELECT * FROM system.build_options" || true
