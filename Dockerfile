@@ -1,4 +1,4 @@
-FROM docker:stable
+FROM docker:cli
 
 COPY run-clickhouse.sh /run-clickhouse.sh
 
